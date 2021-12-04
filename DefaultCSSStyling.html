@@ -12,13 +12,13 @@
     <button>Apply now</button>
     <ul>
       <li>
-        <a href="https://www.shecodes.io/students" class="x"> Coders </a>
+        <a class="x"> Coders </a>
       </li>
       <li>
-        <a href=" https://www.shecodes.io/workshops" class="x2"> Coursers </a>
+        <a class="x2"> Coursers </a>
       </li>
       <li>
-        <a href="https://www.shecodes.io/stories" class="x3"> Stories </a>
+        <a class="x3"> Stories </a>
       </li>
     </ul>
     <hr />
@@ -33,17 +33,17 @@
     />
 
     <style>
-      .x1 {
+      .x {
+        display: inline;
         color: blue;
-        text-decoration: underline;
       }
       .x2 {
+        display: inline;
         color: red;
-        text-decoration: underline;
       }
       .x3 {
+        display: inline;
         color: green;
-        text-decoration: underline;
       }
       h1 {
         color: #885df1;
@@ -51,6 +51,7 @@
         text-align: center;
       }
       h2 {
+        font-weight: 100;
         color: #272044;
         text-align: center;
       }
@@ -67,9 +68,35 @@
       }
       button {
         color: #885df1;
+        background: transparent;
         display: block;
         margin: 30px auto;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 20px;
+        border: 1px solid #885df1;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      ul li {
+        text-align: center;
+        margin: 0 auto;
+        display: inline;
+        padding: 10px;
+        list-style: none;
+      }
+      ul {
+        padding: 1px 360px;
+      }
+      .x:hover {
+        text-decoration: underline;
+        cursor: default;
+      }
+      .x2:hover {
+        text-decoration: underline;
+        cursor: default;
+      }
+      .x3:hover {
+        text-decoration: underline;
+        cursor: default;
       }
     </style>
   </body>
