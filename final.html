@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎵</title>
+    <style>
+      .box {
+        background: #faedf0;
+        margin: 50px 300px 50px 300px;
+        padding: 50px 40px 50px 40px;
+        justify-content: left;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 20px 10px 10px;
+        font-weight: 200;
+        color: #292c6d;
+        text-align: center;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 10px;
+        color: #ec255a;
+        font-weight: 200;
+        text-align: center;
+      }
+
+      .text {
+        color: #292c6d;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 150%;
+      }
+      img {
+        size: inherit;
+        display: block;
+        margin: 0 auto;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 60px 10px 60px;
+      }
+      a {
+        color: #292c6d;
+      }
+      li {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+        margin: 0 15px;
+        justify-content: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #ec255a;
+        color: white;
+        border: solid #ec255a;
+        border-radius: 10px;
+        height: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background: #faedf056;
+        border: solid #ec255a;
+        border-radius: 10px;
+        color: #ec255a;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Music</h1>
+      <h2>
+        A Door to another <em>Universe</em> <br />
+        🎶
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/622/original/tumblr-one-color-music-Favim.com-6739491.jpg?1639339923"
+        alt="music"
+        width="400"
+        height="400"
+      />
+      <hr />
+      <p class="text">
+        Music is the <strong> art </strong> of arranging sounds in time through
+        the elements of melody, harmony, rhythm, and timbre. It is one of the
+        universal cultural aspects of all human societies.
+        <strong> But why music is so important?</strong>
+        Making art is a basic human function. For whatever reason, we feel the
+        need to leave a mark on the world. We have a burning desire to create,
+        whether it’s folk songs, rock art, or movies – it’s all human
+        expression. Music can whisk you away on an extended journey. Music can
+        make time feel frozen. Music also has the power to suggest movement. All
+        these things deal with the human senses.What is amazing about music is
+        that it is imbedded within all of us. Everyone can understand it and
+        feel something if they open themselves up. Playing music with other
+        musicians is an incredible feeling. Some people describe it as rowing
+        down a river together. There is a certain type of connection that comes
+        when you make music in a group. The same is true for those who are
+        listening to music in a group and interacting with music through Dance.
+        This type of behavior is rooted in our history and our discoveries as
+        human beings.
+      </p>
+
+      <span class="text">Listen to my favourit songs at the moment :) </span>
+
+      <ul>
+        <li>
+          <a
+            href="https://open.spotify.com/track/6YUUQapDEqBF1yP3iHlsut?si=6014e61597704bb1"
+          >
+            Insomnia
+          </a>
+        </li>
+        <li>
+          <a
+            href=" https://open.spotify.com/track/1Wdj4wRDYS7aT4CoPS0mAH?si=1908c1eef4ed4ec6"
+          >
+            you are enough
+          </a>
+        </li>
+      </ul>
+
+      <button>what's your favorite song?</button>
+    </div>
+    <script>
+      function f() {
+        let txt = prompt("What's your favorite song?");
+        alert("I'm sure it's beautiful!");
+        let song = prompt("Did you listen to the songs?");
+        if (song.toLowerCase() === "yes") alert("Good job! 😊");
+        else if (song.toLocaleLowerCase() === "no") alert("your loss 😁 ");
+        else alert("It's not the answer to my question but okay?...");
+      }
+      let buttonEvent = document.querySelector("button");
+      buttonEvent.addEventListener("click", f);
+    </script>
+  </body>
+</html>
